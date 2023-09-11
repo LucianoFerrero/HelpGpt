@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC42A762AADEE8800F64182 /* TypingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC42A752AADEE8800F64182 /* TypingAnimation.swift */; };
+		1CE5BBD72AA92FA800264F8B /* helpgptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */; };
+		1CE5BBD92AA92FA800264F8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBD82AA92FA800264F8B /* ContentView.swift */; };
+		1CE5BBDB2AA92FAC00264F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5BBDA2AA92FAC00264F8B /* Assets.xcassets */; };
+		1CE5BBDE2AA92FAC00264F8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5BBDD2AA92FAC00264F8B /* Preview Assets.xcassets */; };
+		1CE5BBE82AA92FAC00264F8B /* helpgptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBE72AA92FAC00264F8B /* helpgptTests.swift */; };
+		1CE5BBF22AA92FAC00264F8B /* helpgptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBF12AA92FAC00264F8B /* helpgptUITests.swift */; };
+		1CE5BBF42AA92FAC00264F8B /* helpgptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBF32AA92FAC00264F8B /* helpgptUITestsLaunchTests.swift */; };
+		1CE5BC022AA930D400264F8B /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE5BC012AA930D400264F8B /* SwiftOpenAI */; };
+		1CE5BC042AA931D200264F8B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BC032AA931D200264F8B /* ViewModel.swift */; };
+		1CE5BC072AA95A3200264F8B /* TextMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BC062AA95A3200264F8B /* TextMessageView.swift */; };
+		1CE5BC092AA97B1900264F8B /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BC082AA97B1900264F8B /* ConversationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE5BBE42AA92FAC00264F8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE5BBCB2AA92FA800264F8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE5BBD22AA92FA800264F8B;
+			remoteInfo = helpgpt;
+		};
+		1CE5BBEE2AA92FAC00264F8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE5BBCB2AA92FA800264F8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE5BBD22AA92FA800264F8B;
+			remoteInfo = helpgpt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC42A752AADEE8800F64182 /* TypingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimation.swift; sourceTree = "<group>"; };
+		1CE5BBD32AA92FA800264F8B /* helpgpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpgpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpgptApp.swift; sourceTree = "<group>"; };
+		1CE5BBD82AA92FA800264F8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CE5BBDA2AA92FAC00264F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE5BBDD2AA92FAC00264F8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CE5BBE32AA92FAC00264F8B /* helpgptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpgptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5BBE72AA92FAC00264F8B /* helpgptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpgptTests.swift; sourceTree = "<group>"; };
+		1CE5BBED2AA92FAC00264F8B /* helpgptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpgptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5BBF12AA92FAC00264F8B /* helpgptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpgptUITests.swift; sourceTree = "<group>"; };
+		1CE5BBF32AA92FAC00264F8B /* helpgptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpgptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE5BC032AA931D200264F8B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1CE5BC062AA95A3200264F8B /* TextMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageView.swift; sourceTree = "<group>"; };
+		1CE5BC082AA97B1900264F8B /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE5BBD02AA92FA800264F8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5BC022AA930D400264F8B /* SwiftOpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBE02AA92FAC00264F8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBEA2AA92FAC00264F8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE5BBCA2AA92FA800264F8B = {
+			isa = PBXGroup;
+			children = (
+				1CF58A562AABBA5400D83009 /* Animations */,
+				1CE5BBD52AA92FA800264F8B /* helpgpt */,
+				1CE5BBE62AA92FAC00264F8B /* helpgptTests */,
+				1CE5BBF02AA92FAC00264F8B /* helpgptUITests */,
+				1CE5BBD42AA92FA800264F8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE5BBD42AA92FA800264F8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BBD32AA92FA800264F8B /* helpgpt.app */,
+				1CE5BBE32AA92FAC00264F8B /* helpgptTests.xctest */,
+				1CE5BBED2AA92FAC00264F8B /* helpgptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE5BBD52AA92FA800264F8B /* helpgpt */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */,
+				1CE5BBD82AA92FA800264F8B /* ContentView.swift */,
+				1CE5BC052AA95A0300264F8B /* SubViews */,
+				1CE5BC032AA931D200264F8B /* ViewModel.swift */,
+				1CE5BBDA2AA92FAC00264F8B /* Assets.xcassets */,
+				1CE5BBDC2AA92FAC00264F8B /* Preview Content */,
+			);
+			path = helpgpt;
+			sourceTree = "<group>";
+		};
+		1CE5BBDC2AA92FAC00264F8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BBDD2AA92FAC00264F8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CE5BBE62AA92FAC00264F8B /* helpgptTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BBE72AA92FAC00264F8B /* helpgptTests.swift */,
+			);
+			path = helpgptTests;
+			sourceTree = "<group>";
+		};
+		1CE5BBF02AA92FAC00264F8B /* helpgptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BBF12AA92FAC00264F8B /* helpgptUITests.swift */,
+				1CE5BBF32AA92FAC00264F8B /* helpgptUITestsLaunchTests.swift */,
+			);
+			path = helpgptUITests;
+			sourceTree = "<group>";
+		};
+		1CE5BC052AA95A0300264F8B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5BC062AA95A3200264F8B /* TextMessageView.swift */,
+				1CE5BC082AA97B1900264F8B /* ConversationView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		1CF58A562AABBA5400D83009 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1CC42A752AADEE8800F64182 /* TypingAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE5BBD22AA92FA800264F8B /* helpgpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE5BBF72AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgpt" */;
+			buildPhases = (
+				1CE5BBCF2AA92FA800264F8B /* Sources */,
+				1CE5BBD02AA92FA800264F8B /* Frameworks */,
+				1CE5BBD12AA92FA800264F8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helpgpt;
+			packageProductDependencies = (
+				1CE5BC012AA930D400264F8B /* SwiftOpenAI */,
+			);
+			productName = helpgpt;
+			productReference = 1CE5BBD32AA92FA800264F8B /* helpgpt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CE5BBE22AA92FAC00264F8B /* helpgptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE5BBFA2AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgptTests" */;
+			buildPhases = (
+				1CE5BBDF2AA92FAC00264F8B /* Sources */,
+				1CE5BBE02AA92FAC00264F8B /* Frameworks */,
+				1CE5BBE12AA92FAC00264F8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE5BBE52AA92FAC00264F8B /* PBXTargetDependency */,
+			);
+			name = helpgptTests;
+			productName = helpgptTests;
+			productReference = 1CE5BBE32AA92FAC00264F8B /* helpgptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CE5BBEC2AA92FAC00264F8B /* helpgptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE5BBFD2AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgptUITests" */;
+			buildPhases = (
+				1CE5BBE92AA92FAC00264F8B /* Sources */,
+				1CE5BBEA2AA92FAC00264F8B /* Frameworks */,
+				1CE5BBEB2AA92FAC00264F8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE5BBEF2AA92FAC00264F8B /* PBXTargetDependency */,
+			);
+			name = helpgptUITests;
+			productName = helpgptUITests;
+			productReference = 1CE5BBED2AA92FAC00264F8B /* helpgptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE5BBCB2AA92FA800264F8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1CE5BBD22AA92FA800264F8B = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1CE5BBE22AA92FAC00264F8B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1CE5BBD22AA92FA800264F8B;
+					};
+					1CE5BBEC2AA92FAC00264F8B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1CE5BBD22AA92FA800264F8B;
+					};
+				};
+			};
+			buildConfigurationList = 1CE5BBCE2AA92FA800264F8B /* Build configuration list for PBXProject "helpgpt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE5BBCA2AA92FA800264F8B;
+			packageReferences = (
+				1CE5BC002AA930D400264F8B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+			);
+			productRefGroup = 1CE5BBD42AA92FA800264F8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE5BBD22AA92FA800264F8B /* helpgpt */,
+				1CE5BBE22AA92FAC00264F8B /* helpgptTests */,
+				1CE5BBEC2AA92FAC00264F8B /* helpgptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE5BBD12AA92FA800264F8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5BBDE2AA92FAC00264F8B /* Preview Assets.xcassets in Resources */,
+				1CE5BBDB2AA92FAC00264F8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBE12AA92FAC00264F8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBEB2AA92FAC00264F8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE5BBCF2AA92FA800264F8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5BBD92AA92FA800264F8B /* ContentView.swift in Sources */,
+				1CE5BC072AA95A3200264F8B /* TextMessageView.swift in Sources */,
+				1CE5BC042AA931D200264F8B /* ViewModel.swift in Sources */,
+				1CC42A762AADEE8800F64182 /* TypingAnimation.swift in Sources */,
+				1CE5BBD72AA92FA800264F8B /* helpgptApp.swift in Sources */,
+				1CE5BC092AA97B1900264F8B /* ConversationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBDF2AA92FAC00264F8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5BBE82AA92FAC00264F8B /* helpgptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5BBE92AA92FAC00264F8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5BBF22AA92FAC00264F8B /* helpgptUITests.swift in Sources */,
+				1CE5BBF42AA92FAC00264F8B /* helpgptUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CE5BBE52AA92FAC00264F8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE5BBD22AA92FA800264F8B /* helpgpt */;
+			targetProxy = 1CE5BBE42AA92FAC00264F8B /* PBXContainerItemProxy */;
+		};
+		1CE5BBEF2AA92FAC00264F8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE5BBD22AA92FA800264F8B /* helpgpt */;
+			targetProxy = 1CE5BBEE2AA92FAC00264F8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CE5BBF52AA92FAC00264F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CE5BBF62AA92FAC00264F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE5BBF82AA92FAC00264F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"helpgpt/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H5QMMAF7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgpt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CE5BBF92AA92FAC00264F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"helpgpt/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H5QMMAF7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgpt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CE5BBFB2AA92FAC00264F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helpgpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/helpgpt";
+			};
+			name = Debug;
+		};
+		1CE5BBFC2AA92FAC00264F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helpgpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/helpgpt";
+			};
+			name = Release;
+		};
+		1CE5BBFE2AA92FAC00264F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = helpgpt;
+			};
+			name = Debug;
+		};
+		1CE5BBFF2AA92FAC00264F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-com.luciano.helpgptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = helpgpt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE5BBCE2AA92FA800264F8B /* Build configuration list for PBXProject "helpgpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE5BBF52AA92FAC00264F8B /* Debug */,
+				1CE5BBF62AA92FAC00264F8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE5BBF72AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE5BBF82AA92FAC00264F8B /* Debug */,
+				1CE5BBF92AA92FAC00264F8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE5BBFA2AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE5BBFB2AA92FAC00264F8B /* Debug */,
+				1CE5BBFC2AA92FAC00264F8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE5BBFD2AA92FAC00264F8B /* Build configuration list for PBXNativeTarget "helpgptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE5BBFE2AA92FAC00264F8B /* Debug */,
+				1CE5BBFF2AA92FAC00264F8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CE5BC002AA930D400264F8B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftBeta/SwiftOpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE5BC012AA930D400264F8B /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE5BC002AA930D400264F8B /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1CE5BBCB2AA92FA800264F8B /* Project object */;
+}
