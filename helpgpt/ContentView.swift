@@ -8,21 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowing = false
+    var body: some View {
+        NavigationView{
+            ZStack{
+                if isShowing{
+                    SideBarMenu(isShowing: $isShowing)
+                }
+                HomeView()
+                    .cornerRadius(isShowing ? 20 : 10)
+                    .offset(x: isShowing ? 300 : 0, y: isShowing ? 44 : 0)
+                    .scaleEffect(isShowing ? 0.8 : 1)
+                    .navigationBarItems(leading: Button(action: {
+                        withAnimation(.spring()){
+                            isShowing.toggle()
+                        }
+                    }, label: {
+                        Image(systemName: "list.bullet")
+                            .foregroundColor(.black)
+                    }))
+                    .navigationTitle("Chat")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .padding()
+
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct HomeView: View {
     @StateObject var viewModel = ViewModel()
     @State var prompt: String = ""
     var body: some View {
+
         VStack {
             ConversationView()
                 .environmentObject(viewModel)
                 .padding(.horizontal, 12)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-            TypingAnimation()
-                .frame(width:50, height:50)
-                .alignmentGuide(HorizontalAlignment.trailing){ dimension in dimension[.trailing]
-                    }
             
-
             HStack{
                 TextField("Escribele una pregunta a helpgpt",
                           text:$prompt,
@@ -34,6 +64,7 @@ struct ContentView: View {
                 Button {
                     Task{
                         await viewModel.send(message: prompt)
+                        self.prompt = ""
                     }
                 } label: {
                     Image(systemName: "paperplane.fill")
@@ -46,11 +77,6 @@ struct ContentView: View {
             }
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        .background(.white)
     }
 }

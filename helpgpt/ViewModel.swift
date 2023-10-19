@@ -13,10 +13,10 @@ final class ViewModel: ObservableObject {
         .init(text: "Hola! Soy HelperGpt, estoy aqui para contestar tus preguntas.", role: .system)
     ]
     @Published var currentMessage: MessageChatGPT = .init(text: "", role: .assistant)
-    var openAI = SwiftOpenAI(apiKey: "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")
+    var openAI = SwiftOpenAI(apiKey: "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")
     
     func send(message: String) async{
-        let optionalParameters = ChatCompletionsOptionalParameters(temperature: 0.7, stream: true, maxTokens: 200)
+        let optionalParameters = ChatCompletionsOptionalParameters(temperature: 0.7, stream: true, maxTokens: 250)
         
         await MainActor.run{
             let myMessage = MessageChatGPT(text: message, role: .user)

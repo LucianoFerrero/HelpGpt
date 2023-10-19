@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1262A62AE04AB800B34455 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262A52AE04AB800B34455 /* SideBarMenu.swift */; };
+		1C1262AA2AE09C0C00B34455 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262A92AE09C0C00B34455 /* NavBar.swift */; };
+		1C1262AC2AE0A08A00B34455 /* MessageSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262AB2AE0A08A00B34455 /* MessageSectionView.swift */; };
+		1C1262AF2AE0B01400B34455 /* TopButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262AE2AE0B01400B34455 /* TopButtonsView.swift */; };
+		1C1262B12AE0B60F00B34455 /* ChatGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262B02AE0B60F00B34455 /* ChatGroupView.swift */; };
+		1C1262B32AE0B8C900B34455 /* UserDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1262B22AE0B8C900B34455 /* UserDatesView.swift */; };
 		1CC42A762AADEE8800F64182 /* TypingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC42A752AADEE8800F64182 /* TypingAnimation.swift */; };
 		1CE5BBD72AA92FA800264F8B /* helpgptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */; };
 		1CE5BBD92AA92FA800264F8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5BBD82AA92FA800264F8B /* ContentView.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1262A52AE04AB800B34455 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
+		1C1262A92AE09C0C00B34455 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		1C1262AB2AE0A08A00B34455 /* MessageSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSectionView.swift; sourceTree = "<group>"; };
+		1C1262AE2AE0B01400B34455 /* TopButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonsView.swift; sourceTree = "<group>"; };
+		1C1262B02AE0B60F00B34455 /* ChatGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupView.swift; sourceTree = "<group>"; };
+		1C1262B22AE0B8C900B34455 /* UserDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatesView.swift; sourceTree = "<group>"; };
 		1CC42A752AADEE8800F64182 /* TypingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimation.swift; sourceTree = "<group>"; };
 		1CE5BBD32AA92FA800264F8B /* helpgpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpgpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpgptApp.swift; sourceTree = "<group>"; };
@@ -81,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1262AD2AE0AFDC00B34455 /* SubViewsSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				1C1262AE2AE0B01400B34455 /* TopButtonsView.swift */,
+				1C1262B02AE0B60F00B34455 /* ChatGroupView.swift */,
+				1C1262B22AE0B8C900B34455 /* UserDatesView.swift */,
+			);
+			path = SubViewsSideBar;
+			sourceTree = "<group>";
+		};
 		1CE5BBCA2AA92FA800264F8B = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +127,16 @@
 		1CE5BBD52AA92FA800264F8B /* helpgpt */ = {
 			isa = PBXGroup;
 			children = (
+				1C1262AD2AE0AFDC00B34455 /* SubViewsSideBar */,
+				1C1262A52AE04AB800B34455 /* SideBarMenu.swift */,
 				1CE5BBD62AA92FA800264F8B /* helpgptApp.swift */,
 				1CE5BBD82AA92FA800264F8B /* ContentView.swift */,
+				1C1262AB2AE0A08A00B34455 /* MessageSectionView.swift */,
 				1CE5BC052AA95A0300264F8B /* SubViews */,
 				1CE5BC032AA931D200264F8B /* ViewModel.swift */,
 				1CE5BBDA2AA92FAC00264F8B /* Assets.xcassets */,
 				1CE5BBDC2AA92FAC00264F8B /* Preview Content */,
+				1C1262A92AE09C0C00B34455 /* NavBar.swift */,
 			);
 			path = helpgpt;
 			sourceTree = "<group>";
@@ -293,7 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1262A62AE04AB800B34455 /* SideBarMenu.swift in Sources */,
+				1C1262B32AE0B8C900B34455 /* UserDatesView.swift in Sources */,
+				1C1262AA2AE09C0C00B34455 /* NavBar.swift in Sources */,
+				1C1262AC2AE0A08A00B34455 /* MessageSectionView.swift in Sources */,
 				1CE5BBD92AA92FA800264F8B /* ContentView.swift in Sources */,
+				1C1262AF2AE0B01400B34455 /* TopButtonsView.swift in Sources */,
+				1C1262B12AE0B60F00B34455 /* ChatGroupView.swift in Sources */,
 				1CE5BC072AA95A3200264F8B /* TextMessageView.swift in Sources */,
 				1CE5BC042AA931D200264F8B /* ViewModel.swift in Sources */,
 				1CC42A762AADEE8800F64182 /* TypingAnimation.swift in Sources */,
